@@ -1,18 +1,16 @@
 body {
     background-color: #F5F5F7;
-    font-size: 16px;
-    
 }
 
-/* grid setup */
+/* Grid Setup CSS */
 .home-layout {
     border: solid red;
     display: grid;
-    grid-template-rows: auto auto auto;
     grid-template-areas: 
     "header" 
     "main" 
     "footer";
+    grid-template-rows: auto auto auto;
     gap: .25em 0;
     padding: 0 16px;
 }
@@ -40,7 +38,7 @@ body {
 
 .navbar-title {
     color: #3C3846;
-    font-size: 36px;
+    font-size: 2.25em;
     font-style: italic;
     margin: 0;
     margin-bottom: .25em;
@@ -49,7 +47,7 @@ body {
 .navbar-subscribe {
     color: #3C3846;
     display: inline-block;
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 600;
     margin-bottom: .5em;
     text-decoration: none;
@@ -71,5 +69,64 @@ body {
     border: .15em solid #4A4B7B;
 }
 
+/* Main CSS */
+.section-title {
+    border-bottom: .1em solid #3C3846;
+    color: #3C3846;
+    font-size: 1.5em;
+    font-style: italic;
+    margin: 0;
+}
 
+.posts {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5em;
+}
 
+.card {
+    border: .15em solid #3C3846;
+    border-radius: .5em;
+    margin: .5em;
+    padding: .25em;
+}
+
+.card-image {
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+    height: 100%;
+    width: 100%;
+}
+
+.card-title {
+    border-bottom: solid #4A4B7B;
+    border-top: solid #4A4B7B;
+    color: #3C3846;
+    font-size: 1.125em;
+    margin: 0;
+    text-align: center;
+}
+
+.card-content {
+    color: #3C3846;
+    font-weight: 600;
+    margin: .5em 0;
+    text-align: justify;
+}
+
+.card-footer {
+    padding: .5em;
+    text-align: center;
+}
+
+.card-footer .post-link {
+    color: #F5F5F7;
+    background-color: #4A4B7B;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: .5em;
+    border-radius: .5em;
+    font-weight: 700;
+    font-size: .875em;
+}
