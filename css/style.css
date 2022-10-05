@@ -1,20 +1,44 @@
 body {
     background-color: #F5F5F7;
     font-size: 16px;
+    
+}
+
+/* grid setup */
+.home-layout {
+    border: solid red;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header" 
+    "main" 
+    "footer";
+    gap: .25em 0;
     padding: 0 16px;
 }
 
-/* Header CSS */
 .header {
-    margin-bottom: 2em;
+    border: solid red;
+    grid-area: header;
 }
 
+.main {
+    border: solid red;
+    grid-area: main;
+}
+
+.footer {
+    border: solid red;
+    grid-area: footer;
+}
+
+/* Nav Bar CSS */
 .navbar {
     display: flex;
     flex-direction: column;
 }
 
-#navbar-title {
+.navbar-title {
     color: #3C3846;
     font-size: 36px;
     font-style: italic;
@@ -22,7 +46,7 @@ body {
     margin-bottom: .25em;
 }
 
-#navbar-subscribe {
+.navbar-subscribe {
     color: #3C3846;
     display: inline-block;
     font-size: 20px;
@@ -31,7 +55,7 @@ body {
     text-decoration: none;
 }
 
-#navbar-search {
+.navbar-search {
     background-color: inherit;
     background-image: url("../images/search-icon.png");
     background-repeat: no-repeat;
@@ -40,10 +64,10 @@ body {
     border-radius: .25em;
     outline: none;
     padding: .25em 0 .25em 1.75em;
-    width: 50%;
+    width: 65%;
 }
 
-#navbar-search:focus,  #navbar-search:active{
+.navbar-search:focus,  #navbar-search:active{
     border: .15em solid #4A4B7B;
 }
 

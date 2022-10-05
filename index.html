@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog Project</title>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <div class="page-layout">
+    <div class="home-layout">
         <header class="header">
             <nav class="navbar">
-                <h1 id="navbar-title">Blog Title</h1>
-                <a id="navbar-subscribe" href="#">Subscribe</a>
-                <input id="navbar-search" type="search" placeholder="Search">
+                <h1 class="navbar-title">Blog Title</h1>
+                <a class="navbar-subscribe" href="#">Subscribe</a>
+                <input class="navbar-search" type="search" placeholder="Search" />
             </nav>
         </header>
-        <main>
-            <div>Posts</div>
-            <div class="card">
-                <p class="card-title">Card 1</p>
-                <p class="card-image">Image 1</p>
-                <p class="card-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, minima?</p>
-                <p class="card-footer">Keep Reading</p>
+        <main class="main">
+            <h2>Posts</h2>
+            <div id="posts">
+                <div class="card">
+                    <p class="card-title">Card 1</p>
+                    <p class="card-image">Image 1</p>
+                    <p class="card-content">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Possimus, minima?
+                    </p>
+                    <p class="card-footer">Keep Reading</p>
+                </div>
             </div>
+            <h2>Subscribe</h2>
         </main>
         <footer class="footer">
-            Created By Fatimah Al Ibrahim for Fron End Developer Nanodegree @ 2022
+            Created By Fatimah Al Ibrahim for Front End Developer Nanodegree @ 2022
         </footer>
     </div>
-    
 </body>
+
 </html>
