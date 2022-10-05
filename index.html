@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Project</title>
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-    <div>
-        <header>
+    <div class="page-layout">
+        <header class="header">
             <nav class="navbar">
-                <div class="navbar-title">Blog Title</div>
-                <div class="navbar-subscribe">Subscribe</div>
-                <div class="navbar-search"></div>
+                <h1 id="navbar-title">Blog Title</h1>
+                <a id="navbar-subscribe" href="#">Subscribe</a>
+                <input id="navbar-search" type="search" placeholder="Search">
             </nav>
         </header>
         <main>
+            <div>Posts</div>
             <div class="card">
                 <p class="card-title">Card 1</p>
                 <p class="card-image">Image 1</p>

@@ -1,3 +1,51 @@
 body {
     background-color: #F5F5F7;
+    font-size: 16px;
+    padding: 0 16px;
 }
+
+/* Header CSS */
+.header {
+    margin-bottom: 2em;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar-title {
+    color: #3C3846;
+    font-size: 36px;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: .25em;
+}
+
+#navbar-subscribe {
+    color: #3C3846;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: .5em;
+    text-decoration: none;
+}
+
+#navbar-search {
+    background-color: inherit;
+    background-image: url("../images/search-icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: .1em solid #3C3846;
+    border-radius: .25em;
+    outline: none;
+    padding: .25em 0 .25em 1.75em;
+    width: 50%;
+}
+
+#navbar-search:focus,  #navbar-search:active{
+    border: .15em solid #4A4B7B;
+}
+
+
+
