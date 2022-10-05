@@ -1,10 +1,11 @@
 body {
     background-color: #F5F5F7;
+    margin: 0;
+    padding: 0;
 }
 
 /* Grid Setup CSS */
 .home-layout {
-    border: solid red;
     display: grid;
     grid-template-areas: 
     "header" 
@@ -12,22 +13,28 @@ body {
     "footer";
     grid-template-rows: auto auto auto;
     gap: .25em 0;
-    padding: 0 16px;
 }
 
 .header {
-    border: solid red;
     grid-area: header;
+    padding: 0 1em;
 }
 
 .main {
-    border: solid red;
     grid-area: main;
+    padding: 0 1em;
 }
 
 .footer {
-    border: solid red;
+    align-items: center;
+    background-color: #3C3846;
+    color: #F5F5F7;
+    display: flex;
+    flex-direction: row;
     grid-area: footer;
+    justify-content: space-around;
+    padding: .2em 0;
+    text-align: center;
 }
 
 /* Nav Bar CSS */
@@ -65,11 +72,12 @@ body {
     width: 65%;
 }
 
-.navbar-search:focus,  #navbar-search:active{
+.navbar-search:focus {
     border: .15em solid #4A4B7B;
 }
 
-/* Main CSS */
+/* Main CSS -- Posts */
+
 .section-title {
     border-bottom: .1em solid #3C3846;
     color: #3C3846;
@@ -120,13 +128,63 @@ body {
 }
 
 .card-footer .post-link {
-    color: #F5F5F7;
     background-color: #4A4B7B;
+    border-radius: .5em;
+    color: #F5F5F7;
     display: inline-block;
+    font-size: .875em;
+    font-weight: 700;
+    padding: .5em;
     text-align: center;
     text-decoration: none;
+}
+
+/* Main CSS -- Subscribtion Form */
+#subscribe-form {
     padding: .5em;
+    text-align: center;
+}
+
+.subscribe-label {
+    display: inline-block;
+    color: #3C3846;
+    font-weight: 600;
+    margin: .25em 0;
+}
+
+.subscribe-input {
+    background-color: inherit;
+    border: .1em solid #3C3846;
+    border-radius: .25em;
+    outline: none;
+    padding: .25em 0 .25em .5em;
+}
+
+.subscribe-input:focus {
+    border: .15em solid #4A4B7B;
+}
+
+#subscribe-button {
+    background-color: #4A4B7B;
+    border: none;
     border-radius: .5em;
-    font-weight: 700;
+    color: #F5F5F7;
     font-size: .875em;
+    font-weight: 700;
+    margin-top: .5em;
+    padding: .5em;
+}
+
+
+/* Footer CSS */
+
+.footer-copyright {
+    font-weight: 700;
+    font-style: italic;
+    display: inline-block;
+    margin: 0;
+}
+
+.footer-social-media {
+    width: 1.5em;
 }
