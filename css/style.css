@@ -49,11 +49,16 @@ body {
 }
 
 .navbar-title {
-    color: #FFFFFF;
     font-size: 2.25em;
     font-style: italic;
     margin: 0;
     margin-bottom: .25em;
+}
+
+.navbar-title-link {
+    color: #FFFFFF;
+    text-decoration: none;
+
 }
 
 .navbar-subscribe {
@@ -82,7 +87,6 @@ body {
 }
 
 /* Main CSS -- Posts */
-
 .section-title {
     border-bottom: .1em double #3d6a27;
     color: #3d6a27;
@@ -121,7 +125,7 @@ body {
     border-radius: .25em;
     color: #FFFFFF;
     font-size: 1.125em;
-    margin: 0;
+    margin: -.4em 0 0 0;
     padding: .25em 0;
     text-align: center;
 }
@@ -181,6 +185,7 @@ body {
     border-radius: .5em;
     display: block;
     color: #FFFFFF;
+    cursor: pointer;
     font-size: .875em;
     font-weight: 700;
     margin: .25em auto;
@@ -198,6 +203,25 @@ body {
 
 .footer-social-media {
     width: 1.5em;
+}
+
+/* ------------------POST PAGE CSS --------------------*/
+/* Grid Setup CSS */
+.post-layout {
+    display: grid;
+    grid-template-areas: 
+    "header" 
+    "article"
+    "aside" 
+    "footer";
+    grid-template-rows: auto auto auto auto;
+    gap: 1em 0;
+    margin-top: 1em;
+}
+
+.article {
+    grid-area: header;
+    padding: 0 1em;
 }
 
 /* @ Media Query */
@@ -219,7 +243,7 @@ body {
     }
 
     .navbar-search {
-        margin-bottom: .25em;
+        margin-bottom: .4em;
         margin-left: auto;
         width: 25%;
     }
@@ -260,7 +284,7 @@ body {
     }
 
     .navbar-search {
-        margin-bottom: .25em;
+        margin-bottom: .4em;
         margin-left: auto;
         width: 25%;
     }
