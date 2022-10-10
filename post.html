@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fluffy Cat Blog</title>
+    <title>Cat Blog</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -12,68 +12,69 @@
     <div class="post-layout">
         <header class="header">
             <nav class="navbar">
-                <h1 class="navbar-title"><a class="navbar-title-link" href="index.html">Fluffy Cat Blog</a></h1>
+                <h1 class="navbar-title"><a class="navbar-title-link" href="index.html">Cat Blog</a></h1>
                 <a class="navbar-subscribe" href="index.html#subscribe-form">Subscribe</a>
                 <input class="navbar-search" type="search" placeholder="Search" />
             </nav>
         </header>
         <article class="article">
-            <h2 class="section-title">Fluffy Cat Post</h2>
-            <div>
-                Author
+            <h2 class="section-title">Cat Post</h2>
+            <div id="author">
+                <img id="author-image" alt="Author's Image" src="images/author.jpg"/>
+                <p id="author-info">1/1/2022 by Jhon Doe.</p>
             </div>
-            <figure id="post-image-container">
-                <img id="post-image" alt="Fluffy Cat Picture" src="images/fluffy-cat1.jpg" />
-                <figcaption id="post-image-caption">Fig1. Fluffy Cat Picture</figcaption>
+            <figure class="post-image-container">
+                <img class="post-image" alt="Cat Picture" src="images/fluffy-cat1.jpg" />
+                <figcaption class="post-image-caption">Fig1. Cat Picture</figcaption>
             </figure>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quidem consequuntur expedita adipisci
+            <p class="post-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quidem consequuntur expedita adipisci
                 exercitationem iusto veniam dolorum. Ad harum maxime beatae quae enim omnis quisquam quo excepturi
                 tempore, eaque hic expedita natus, voluptate, repellat necessitatibus. Amet autem quidem quaerat iusto
                 provident fugit excepturi libero ab mollitia reprehenderit quasi, beatae itaque.</p>
-            <h3>Heading</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex voluptate cum amet eaque. Tempore magnam
+            <h3 class="post-heading">Heading</h3>
+            <p class="post-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex voluptate cum amet eaque. Tempore magnam
                 doloremque quae nobis dolor distinctio in! Corrupti necessitatibus enim consequuntur!</p>
-            <h4>Sub Heading</h4>
-            <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
+            <h4 class="post-sub-heading">Sub Heading</h4>
+            <ul id="post-list-unordered">
+                <li class="post-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li class="post-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li class="post-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li class="post-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
             </ul>
-            <h3>Heading</h3>
-            <div>Photo Gallery
-                <figure>
-                    <img alt="Fluffy Cat Picture 1" />
-                    <figcaption>Fig2. Fluffy Cat Picture 1</figcaption>
+            <h3 class="post-heading">Heading</h3>
+            <div id="post-photo-gallary">
+                <figure class="post-image-container">
+                    <img class="post-gallary-image" alt="Cat Picture 1" src="images/fluffy-cat2.jpg"/>
+                    <figcaption class="post-image-caption">Fig2. Cat Picture 1</figcaption>
                 </figure>
-                <figure>
-                    <img alt="Fluffy Cat Picture 2" />
-                    <figcaption>Fig3. Fluffy Cat Picture 2</figcaption>
+                <figure class="post-image-container">
+                    <img class="post-gallary-image" alt="Cat Picture 2" src="images/fluffy-cat3.jpg"/>
+                    <figcaption class="post-image-caption">Fig3. Cat Picture 2</figcaption>
                 </figure>
-                <figure>
-                    <img alt="Fluffy Cat Picture 3" />
-                    <figcaption>Fig4. Fluffy Cat Picture 3</figcaption>
+                <figure class="post-image-container">
+                    <img class="post-gallary-image" alt="Cat Picture 3" src="images/fluffy-cat4.jpg"/>
+                    <figcaption class="post-image-caption">Fig4. Cat Picture 3</figcaption>
                 </figure>
-                <figure>
-                    <img alt="Fluffy Cat Picture 4" />
-                    <figcaption>Fig5. Fluffy Cat Picture 4</figcaption>
+                <figure class="post-image-container">
+                    <img class="post-gallary-image" alt="Cat Picture 4" src="images/fluffy-cat5.jpg"/>
+                    <figcaption class="post-image-caption">Fig5. Cat Picture 4</figcaption>
                 </figure>
             </div>
-            <h4>Sub Heading</h4>
-            <ol>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
+            <h4 class="post-sub-heading">Sub Heading</h4>
+            <ol id="post-list-ordered">
+                <li class="post-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li class="post-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li class="post-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li class="post-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
             </ol>
         </article>
         <aside class="aside">
             <h2 class="section-title">Related Articles</h2>
-            <ul>
-                <li>Fluffy Cats 7 Mysteries</li>
-                <li>Fluffy Cats Care Method</li>
-                <li>Fluffy Cats Favorite Toys</li>
-                <li>Fluffy Cats Healthy Diet</li>
+            <ul id="aside-list">
+                <li class="aside-list-item"><a class="aside-list-item-link" href="#">Cats 7 Mysteries</a></li>
+                <li class="aside-list-item"><a class="aside-list-item-link" href="#">Cats Care Method</a></li>
+                <li class="aside-list-item"><a class="aside-list-item-link" href="#">Cats Favorite Toys</a></li>
+                <li class="aside-list-item"><a class="aside-list-item-link" href="#">Cats Healthy Diet</a></li>
             </ul>
         </aside>
         <footer class="footer">

@@ -231,19 +231,123 @@ body {
     padding: 0 1em;
 }
 
-#post-image-container {
+.post-image-container {
     margin: 0;
+    border: .1em ridge #3d6a27;
 }
 
-#post-image {
+.post-image {
     width: 100%;
 }
 
 #post-image-caption {
     color: #3d6a27;
     font-weight: 600;
-
 }
+
+/* Author CSS */
+#author {
+    display: flex;
+    flex-direction: row;
+    background: #4b457243;
+    padding: .25em 0;
+    margin-bottom: 1em;
+    gap: .5em;
+    border-radius: .5em;
+    justify-content: center;
+    color: #2c2842;
+    font-weight: 600;
+    font-style: italic;
+    font-size: .875;
+}
+
+#author-image {
+    width: 25%;
+    border-radius: 50%;
+}
+
+#author-info {
+    margin-bottom: .5em;
+    margin-top: auto;
+}
+
+/* Post Content CSS*/
+.post-paragraph {
+    color: #2c2842;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.post-heading {
+    font-size: 1.125em;
+    color: #3d6a27;
+    font-weight: 600;
+    border-bottom: .35em double #3d6a27;
+    display: inline-block;
+    margin: 0;
+}
+
+.post-sub-heading {
+    color: #3d6a27;
+    font-weight: 600;
+    border-bottom: .25em double #3d6a27;
+    display: inline-block;
+    margin: 0;
+}
+
+#post-photo-gallary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em 0;
+    gap: .5em;
+}
+
+.post-gallary-image{
+    width: 100%;
+    height: 10em;
+}
+
+#post-list-ordered {
+    color: #2c2842;
+    font-weight: 600;
+    list-style: upper-latin;
+    text-align: justify;
+    margin-left: -1.2em;
+}
+
+.post-list-item {
+    padding-left: .75em;
+}
+
+#post-list-unordered {
+    color: #2c2842;
+    font-weight: 600;
+    list-style: square;
+    text-align: justify;
+    margin-left: -1.2em;
+}
+
+/* Aside CSS*/
+#aside-list {
+    list-style: none;
+    padding-left: 0; 
+    margin: 0;
+    font-size: 1.125em;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.aside-list-item {
+    margin-bottom: 1em; 
+}
+
+.aside-list-item-link {
+    color: #2c2842;
+    text-decoration: none;
+}
+
+
 
 /* @ Media Query */
 @media (min-width: 600px) and (max-width:900px) {
