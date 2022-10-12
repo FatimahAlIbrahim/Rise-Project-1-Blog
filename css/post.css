@@ -60,9 +60,19 @@
     align-self: center;
 }
 
-.post-paragraph {
+#post-quote {
     color: #2c2842;
     font-weight: 600;
+    text-align: justify;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #4b457225;
+    border-left: .25em solid #2c2842;
+    padding: 1em;
+}
+
+.post-paragraph {
+    color: #2c2842;
     text-align: justify;
 }
 
@@ -103,7 +113,6 @@
 
 #post-list-ordered {
     color: #2c2842;
-    font-weight: 600;
     list-style: upper-latin;
     text-align: justify;
     margin-left: -1.2em;
@@ -115,7 +124,6 @@
 
 #post-list-unordered {
     color: #2c2842;
-    font-weight: 600;
     list-style: square;
     text-align: justify;
     margin-left: -1.2em;
