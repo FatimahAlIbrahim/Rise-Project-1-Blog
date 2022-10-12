@@ -1,0 +1,146 @@
+@media (min-width: 600px) and (max-width:900px) {
+    /* --- index css --- */
+    .navbar {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        justify-content: start;
+    }
+
+    .navbar-title {
+        margin-bottom: 0;
+    }
+    
+    .navbar-subscribe {
+        margin-bottom: .25em;
+    }
+
+    .navbar-search {
+        margin-bottom: .4em;
+        margin-left: auto;
+        width: 25%;
+    }
+
+    .posts {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: .5em;
+    }
+
+    .card {
+        width: 41%;
+    }
+    
+    .subscribe-label {
+        margin-bottom: 1em;
+    }
+
+    /* --- post css --- */
+    .post-image-container {
+        margin: 0 2.5em;
+    }
+
+    #author-image {
+        width: 8%;
+        border-radius: 50%;
+    }
+
+    #post-photo-gallary {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .post-gallary-image-container {
+        width: 47%;
+    }
+}
+
+@media (min-width:901px) {
+    /* --- indec css ---*/
+    .navbar {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        justify-content: start;
+    }
+
+    .navbar-title {
+        margin-bottom: 0;
+    }
+    
+    .navbar-subscribe {
+        margin-bottom: .25em;
+    }
+
+    .navbar-search {
+        margin-bottom: .4em;
+        margin-left: auto;
+        width: 25%;
+    }
+
+    .posts {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: .5em;
+    }
+
+    .card {
+        width: 27%;
+    }
+
+    .subscribe-label {
+        display: block;
+        margin-bottom: 1em;
+    }
+
+    .subscribe-input {
+        width: 35%;
+    }
+
+    /* --- post css ---*/
+    .post-image-container {
+        margin: 0 5em;
+    }
+    .post-layout {
+        display: grid;
+        grid-template-areas: 
+        "header header" 
+        "article aside"
+        "footer footer";
+        grid-template-rows: auto auto auto;
+        gap: 1em 0;
+        margin-top: 1em;
+    }
+
+    #author-image {
+        width: 9%;
+        border-radius: 50%;
+    }
+
+    #post-photo-gallary {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: .25em;
+    }
+
+    .post-gallary-image-container {
+        width: 22%;
+    }
+
+    .post-gallary-image{
+        width: 100%;
+        height: 10em;
+    }
+}
