@@ -1,9 +1,9 @@
 .post-layout {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "header"
     "article"
-    "aside" 
+    "aside"
     "footer";
     grid-template-rows: auto auto auto auto;
     gap: 1em 0;
@@ -96,7 +96,7 @@
     border: .25em double #3d6a27;
 }
 
-.post-gallary-image{
+.post-gallary-image {
     width: 100%;
     height: 17em;
 }
@@ -121,10 +121,9 @@
     margin-left: -1.2em;
 }
 
-/* Aside CSS*/
 #aside-list {
     list-style: none;
-    padding-left: 0; 
+    padding-left: 0;
     margin: 0;
     font-size: 1.125em;
     font-weight: 600;
@@ -132,7 +131,7 @@
 }
 
 .aside-list-item {
-    margin-bottom: 1em; 
+    margin-bottom: 1em;
 }
 
 .aside-list-item-link {

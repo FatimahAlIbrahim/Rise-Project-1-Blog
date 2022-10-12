@@ -1,8 +1,8 @@
 .home-layout {
     display: grid;
     grid-template-areas: 
-    "header" 
-    "main" 
+    "header"
+    "main"
     "footer";
     grid-template-rows: auto auto auto;
     gap: 1em 0;
@@ -73,7 +73,6 @@
     text-decoration: none;
 }
 
-/* Main CSS -- Subscribtion Form */
 #subscribe-form {
     padding: .5em;
 }
@@ -111,4 +110,3 @@
     margin: .25em auto;
     padding: .5em;
 }
-
